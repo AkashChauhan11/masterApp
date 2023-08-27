@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imgWhatsspp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="whatsapp_click"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="129dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="160dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck"
+        android:src="@drawable/whatsapp" />
+
+    <ImageView
+        android:id="@+id/imgmail"
+        android:layout_width="129dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="160dp"
+        android:clickable="true"
+        android:onClick="email_click"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/gmail" />
+
+    <ImageView
+        android:id="@+id/imgsms"
+        android:layout_width="129dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="84dp"
+        android:onClick="sms_click"
+        android:src="@drawable/mail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgwallpaper"
+        app:layout_constraintTop_toBottomOf="@+id/imgmail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgwallpaper"
+        android:layout_width="129dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="84dp"
+        android:onClick="wallpaper_click"
+        android:src="@drawable/gallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
